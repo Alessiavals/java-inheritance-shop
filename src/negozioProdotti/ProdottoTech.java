@@ -1,6 +1,6 @@
 package negozioProdotti;
 
-public class ClassePadre {
+public class ProdottoTech {
 
     private int codice;
     private String nome;
@@ -8,11 +8,13 @@ public class ClassePadre {
     private double prezzo;
     private double iva;
 
-    public ClassePadre (int codice, String nome, String marca, double prezzo) {
-     setNome(nome);
-     setMarca(marca);
-     setPrezzo(prezzo);
-     setIva(iva);
+    //costruttore padre
+    public ProdottoTech (int codice, String nome, String marca, double prezzo, double iva) {
+        this.codice = codice;
+        this.setNome(nome);
+        this.setMarca(marca);
+        this.setPrezzo(prezzo);
+        this.setIva(iva);
     }
 
 

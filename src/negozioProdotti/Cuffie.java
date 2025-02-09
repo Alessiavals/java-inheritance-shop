@@ -1,10 +1,16 @@
 package negozioProdotti;
 
-public class Cuffie extends ProdottiShop {
+public class Cuffie extends ProdottoTech {
 
     private String colore;
     private boolean wireless;
 
+    // costruttore figlio
+    public Cuffie(int codice, String nome, String marca, double prezzo, double iva, String colore, boolean wireless){
+        super(codice, nome, marca, prezzo, iva);
+        this.setColore(colore);
+        this.setWireless(wireless);
+    }
 
     // SETTER E GETTER ------------->
     

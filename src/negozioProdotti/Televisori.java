@@ -1,11 +1,16 @@
 package negozioProdotti;
 
-public class Televisori extends ProdottiShop {
+public class Televisori extends ProdottoTech {
     
      private int dimensioni;
      private boolean smart;
 
-    
+    //costruttore figlio
+    public Televisori(int codice, String nome, String marca, double prezzo, double iva, int dimensioni, boolean smart){
+        super(codice, nome, marca, prezzo, iva);
+        this.setDimensioni(dimensioni);
+        this.setSmart(smart);
+    }
     
      // SETTER E GETTER ------------>
      
